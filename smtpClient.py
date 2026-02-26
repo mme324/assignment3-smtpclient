@@ -49,7 +49,6 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
 
     # Send message data.
     # Fill in start
-    msg = 'YOOOO BOB!\r\n' #just to see what happens
     clientSocket.send(msg.encode())
     # Fill in end
 
@@ -71,3 +70,4 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
 if __name__ == '__main__':
 
     smtp_client(1025, '127.0.0.1')
+
